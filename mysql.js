@@ -9,7 +9,7 @@ var connection=mysql.createConnection({
     database:"world"
 });
 connection.connect();
-var query = 'select * from country';
+var query = 'insert into users'
 connection.query(query,function(err,res){    //    执行sql语句
     if(err){
         console.log(err.message);    //    输出数据库错误信息
