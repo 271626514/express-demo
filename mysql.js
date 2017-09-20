@@ -18,3 +18,5 @@ connection.query(query,function(err,res){    //    执行sql语句
         console.log(res);
     }
 });
+
+module.exports = connection;
