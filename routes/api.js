@@ -4,13 +4,18 @@
 
 var express = require('express');
 var router = express.Router();
-var connection = require('../mysql');
 /* GET sql data. */
 /*router.use(function(req, res, next) {
     //res.writeHead(200, { "Content-Type": "application/json;charset=utf-8" });
     console.log(req);
     return next();
 });*/
+
+router.use(function(req,res,next){
+    //中间件
+    next();
+})
+
 router.get('/getcountry', function(req, res, next) {
 
 });
