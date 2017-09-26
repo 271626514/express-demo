@@ -6,10 +6,10 @@ var connection=mysql.createConnection({
     host:"localhost",
     user:"root",
     password:"123456",
-    database:"world"
+    database:"blog"
 });
 connection.connect();
-var query = 'select * from country';
+var query = 'select * from blog_articles';
 connection.query(query,function(err,res){    //    执行sql语句
     if(err){
         console.log(err.message);    //    输出数据库错误信息

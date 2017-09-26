@@ -3,6 +3,7 @@
  */
 //数据库操作
 module.exports = {
-    insert: 'INSERT INTO User(uid,userName) VALUES(?,?)',
-    queryAll: 'SELECT * FROM User'
+    insert: 'INSERT INTO blog_articles(id,article_name,article_body,create_time,last_update_time,article_tag,article_visit) VALUES(?,?,?,?,?,?,?)',
+    queryAll: 'SELECT * FROM blog_articles',
+    getArticleByTag:'SELECT * FROM blog_articles WHERE article_tag = ? '
 }
